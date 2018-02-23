@@ -66,7 +66,7 @@ For details on requesting disclosure or other actions, please see the 【Contact
 
 At JchanKchan, ads delivered by the following companies or third parties may be displayed, and in relation to these ads, the third party may acquire and use cookies and other information from users visiting the websites run by JchanKchan.
 
-Google, nend
+#### Google, nend
 The cookie information acquired by this third party is handled in compliance with the third party's privacy policy.
 
 A user may access the opt-out page on the third party's Web site and stop the third party from using cookies and other information for the purpose of displaying ads.
