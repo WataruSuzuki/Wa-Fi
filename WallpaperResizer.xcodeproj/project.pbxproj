@@ -1,0 +1,901 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60B2EB631BD4C16700595F4E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60B2EB621BD4C16700595F4E /* Settings.bundle */; };
+		6DE5FD945968B272F2F9BC56 /* Pods_WallpaperResizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88382F0F12122953B150E09 /* Pods_WallpaperResizer.framework */; };
+		7AA510C35B94B3866B2DD9D7 /* Pods_WallpaperResizerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98212205B5529AFB2E67903 /* Pods_WallpaperResizerTests.framework */; };
+		960015E019C0955C00FB8091 /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 960015DF19C0955C00FB8091 /* Icon-180.png */; };
+		961E7E641B8F162D00C8FD08 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 961E7E631B8F162D00C8FD08 /* Icon-Small@3x.png */; };
+		96A9174D19B3328100C4E90F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9174B19B3328100C4E90F /* background.png */; };
+		96A9174E19B3328100C4E90F /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9174C19B3328100C4E90F /* background@2x.png */; };
+		96A9175119B3342B00C4E90F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175319B3342B00C4E90F /* InfoPlist.strings */; };
+		96A9176419BAEB2800C4E90F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175519BAEB2800C4E90F /* Icon-72.png */; };
+		96A9176519BAEB2800C4E90F /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175619BAEB2800C4E90F /* Icon-72@2x.png */; };
+		96A9176619BAEB2800C4E90F /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175719BAEB2800C4E90F /* Icon-76.png */; };
+		96A9176719BAEB2800C4E90F /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175819BAEB2800C4E90F /* Icon-76@2x.png */; };
+		96A9176819BAEB2800C4E90F /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175919BAEB2800C4E90F /* Icon-120.png */; };
+		96A9176919BAEB2800C4E90F /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175A19BAEB2800C4E90F /* Icon-iPad-Spotlight-iOS7@2x.png */; };
+		96A9176A19BAEB2800C4E90F /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175B19BAEB2800C4E90F /* Icon-Small-50.png */; };
+		96A9176B19BAEB2800C4E90F /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175C19BAEB2800C4E90F /* Icon-Small.png */; };
+		96A9176C19BAEB2800C4E90F /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175D19BAEB2800C4E90F /* Icon-Small@2x.png */; };
+		96A9176D19BAEB2800C4E90F /* Icon-Spotlight-iOS7.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175E19BAEB2800C4E90F /* Icon-Spotlight-iOS7.png */; };
+		96A9176E19BAEB2800C4E90F /* Icon-Spotlight-iOS7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9175F19BAEB2800C4E90F /* Icon-Spotlight-iOS7@2x.png */; };
+		96A9176F19BAEB2800C4E90F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9176019BAEB2800C4E90F /* Icon.png */; };
+		96A9177019BAEB2800C4E90F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9176119BAEB2800C4E90F /* Icon@2x.png */; };
+		96A9177119BAEB2800C4E90F /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 96A9176219BAEB2800C4E90F /* iTunesArtwork */; };
+		96A9177219BAEB2800C4E90F /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 96A9176319BAEB2800C4E90F /* iTunesArtwork@2x */; };
+		96C4CAB819A8CA52000433F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96C4CABA19A8CA52000433F8 /* Localizable.strings */; };
+		96CAEC1C19D053300084D970 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96CAEC1B19D053300084D970 /* LaunchScreen.xib */; };
+		96CAEC1E19D0FD1F0084D970 /* WallpaperResizer.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CAEC1D19D0FD1F0084D970 /* WallpaperResizer.png */; };
+		96DC29F319A82140007406AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC29F219A82140007406AD /* AppDelegate.swift */; };
+		96DC29F619A82140007406AD /* WallpaperResizer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96DC29F419A82140007406AD /* WallpaperResizer.xcdatamodeld */; };
+		96DC29F819A82140007406AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC29F719A82140007406AD /* ViewController.swift */; };
+		96DC29FB19A82140007406AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DC29F919A82140007406AD /* Main.storyboard */; };
+		96DC29FD19A82140007406AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96DC29FC19A82140007406AD /* Images.xcassets */; };
+		96DC2A0919A82140007406AD /* WallpaperResizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC2A0819A82140007406AD /* WallpaperResizerTests.swift */; };
+		CC455A3022F190C20056198C /* Purchase+AdMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2222F190C20056198C /* Purchase+AdMob.swift */; };
+		CC455A3122F190C20056198C /* Purchase+AdMobBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2322F190C20056198C /* Purchase+AdMobBanner.swift */; };
+		CC455A3222F190C20056198C /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC455A2422F190C20056198C /* UnifiedNativeAdView.xib */; };
+		CC455A3322F190C20056198C /* Purchase+AdMobNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2522F190C20056198C /* Purchase+AdMobNative.swift */; };
+		CC455A3422F190C20056198C /* Purchase+AdMobReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2622F190C20056198C /* Purchase+AdMobReward.swift */; };
+		CC455A3522F190C20056198C /* Purchase+Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2922F190C20056198C /* Purchase+Consent.swift */; };
+		CC455A3622F190C20056198C /* Purchase+SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */; };
+		CC455A3722F190C20056198C /* Purchase+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2C22F190C20056198C /* Purchase+Store.swift */; };
+		CC455A3822F190C20056198C /* Purchase+Recommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2D22F190C20056198C /* Purchase+Recommend.swift */; };
+		CC455A3922F190C20056198C /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2E22F190C20056198C /* PurchaseService.swift */; };
+		CC455A4222F198AF0056198C /* UIViewController+Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A3E22F198AF0056198C /* UIViewController+Top.swift */; };
+		CC455A4522F1991D0056198C /* OptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4422F1991D0056198C /* OptionalError.swift */; };
+		CC455A4722F19AEC0056198C /* String+Encript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4622F19AEC0056198C /* String+Encript.swift */; };
+		F073B0C51E24C753002BB4F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F073B0C41E24C753002BB4F4 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96DC2A0319A82140007406AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96DC29E519A8213F007406AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96DC29EC19A8213F007406AD;
+			remoteInfo = WallpaperResizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16AA34DE09A8BE3D70BF1915 /* Pods-WallpaperResizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallpaperResizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallpaperResizer/Pods-WallpaperResizer.debug.xcconfig"; sourceTree = "<group>"; };
+		313C332479DF926EFF30C2D0 /* Pods-WallpaperResizerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallpaperResizerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallpaperResizerTests/Pods-WallpaperResizerTests.release.xcconfig"; sourceTree = "<group>"; };
+		40DBD101F1A2BBE631B7BAE0 /* Pods-WallpaperResizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallpaperResizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WallpaperResizer/Pods-WallpaperResizer.release.xcconfig"; sourceTree = "<group>"; };
+		60B2EB5F1BD4A78C00595F4E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		60B2EB621BD4C16700595F4E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		7C84259AED79110C7ECD4701 /* Pods-WallpaperResizerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallpaperResizerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WallpaperResizerTests/Pods-WallpaperResizerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		960015DF19C0955C00FB8091 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
+		960015E119C095E000FB8091 /* WallpaperResizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WallpaperResizer-Bridging-Header.h"; sourceTree = "<group>"; };
+		961E7E631B8F162D00C8FD08 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		96A9174B19B3328100C4E90F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		96A9174C19B3328100C4E90F /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		96A9175219B3342B00C4E90F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96A9175519BAEB2800C4E90F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		96A9175619BAEB2800C4E90F /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		96A9175719BAEB2800C4E90F /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		96A9175819BAEB2800C4E90F /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		96A9175919BAEB2800C4E90F /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		96A9175A19BAEB2800C4E90F /* Icon-iPad-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-iPad-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		96A9175B19BAEB2800C4E90F /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		96A9175C19BAEB2800C4E90F /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		96A9175D19BAEB2800C4E90F /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		96A9175E19BAEB2800C4E90F /* Icon-Spotlight-iOS7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-iOS7.png"; sourceTree = "<group>"; };
+		96A9175F19BAEB2800C4E90F /* Icon-Spotlight-iOS7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Spotlight-iOS7@2x.png"; sourceTree = "<group>"; };
+		96A9176019BAEB2800C4E90F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		96A9176119BAEB2800C4E90F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		96A9176219BAEB2800C4E90F /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		96A9176319BAEB2800C4E90F /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		96C4CAB919A8CA52000433F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96CAEC1B19D053300084D970 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		96CAEC1D19D0FD1F0084D970 /* WallpaperResizer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WallpaperResizer.png; sourceTree = "<group>"; };
+		96CAEC3319D188390084D970 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96CAEC3419D188390084D970 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		96DC29ED19A8213F007406AD /* WallpaperResizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperResizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96DC29F119A82140007406AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DC29F219A82140007406AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96DC29F519A82140007406AD /* WallpaperResizer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WallpaperResizer.xcdatamodel; sourceTree = "<group>"; };
+		96DC29F719A82140007406AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96DC29FA19A82140007406AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96DC29FC19A82140007406AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		96DC2A0219A82140007406AD /* WallpaperResizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpaperResizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96DC2A0719A82140007406AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96DC2A0819A82140007406AD /* WallpaperResizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperResizerTests.swift; sourceTree = "<group>"; };
+		96F60E1F1BAD89910047E9D0 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		B98212205B5529AFB2E67903 /* Pods_WallpaperResizerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallpaperResizerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88382F0F12122953B150E09 /* Pods_WallpaperResizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallpaperResizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC455A2222F190C20056198C /* Purchase+AdMob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMob.swift"; sourceTree = "<group>"; };
+		CC455A2322F190C20056198C /* Purchase+AdMobBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobBanner.swift"; sourceTree = "<group>"; };
+		CC455A2422F190C20056198C /* UnifiedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedNativeAdView.xib; sourceTree = "<group>"; };
+		CC455A2522F190C20056198C /* Purchase+AdMobNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobNative.swift"; sourceTree = "<group>"; };
+		CC455A2622F190C20056198C /* Purchase+AdMobReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobReward.swift"; sourceTree = "<group>"; };
+		CC455A2922F190C20056198C /* Purchase+Consent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Consent.swift"; sourceTree = "<group>"; };
+		CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+SwiftyStoreKit.swift"; sourceTree = "<group>"; };
+		CC455A2C22F190C20056198C /* Purchase+Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Store.swift"; sourceTree = "<group>"; };
+		CC455A2D22F190C20056198C /* Purchase+Recommend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Recommend.swift"; sourceTree = "<group>"; };
+		CC455A2E22F190C20056198C /* PurchaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
+		CC455A3E22F198AF0056198C /* UIViewController+Top.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Top.swift"; sourceTree = "<group>"; };
+		CC455A4422F1991D0056198C /* OptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalError.swift; sourceTree = "<group>"; };
+		CC455A4622F19AEC0056198C /* String+Encript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Encript.swift"; sourceTree = "<group>"; };
+		F073B0C41E24C753002BB4F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96DC29EA19A8213F007406AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F073B0C51E24C753002BB4F4 /* StoreKit.framework in Frameworks */,
+				6DE5FD945968B272F2F9BC56 /* Pods_WallpaperResizer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DC29FF19A82140007406AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA510C35B94B3866B2DD9D7 /* Pods_WallpaperResizerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C7FA1C394934712D81E7E2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F073B0C41E24C753002BB4F4 /* StoreKit.framework */,
+				60B2EB5F1BD4A78C00595F4E /* CoreTelephony.framework */,
+				96F60E1F1BAD89910047E9D0 /* iAd.framework */,
+				C88382F0F12122953B150E09 /* Pods_WallpaperResizer.framework */,
+				B98212205B5529AFB2E67903 /* Pods_WallpaperResizerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60EEA5771E25F7B70028A74E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		96A9174919B3328100C4E90F /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				96A9174A19B3328100C4E90F /* Image */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		96A9174A19B3328100C4E90F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				96CAEC1D19D0FD1F0084D970 /* WallpaperResizer.png */,
+				960015DF19C0955C00FB8091 /* Icon-180.png */,
+				96A9175519BAEB2800C4E90F /* Icon-72.png */,
+				96A9175619BAEB2800C4E90F /* Icon-72@2x.png */,
+				96A9175719BAEB2800C4E90F /* Icon-76.png */,
+				96A9175819BAEB2800C4E90F /* Icon-76@2x.png */,
+				96A9175919BAEB2800C4E90F /* Icon-120.png */,
+				96A9175A19BAEB2800C4E90F /* Icon-iPad-Spotlight-iOS7@2x.png */,
+				96A9175B19BAEB2800C4E90F /* Icon-Small-50.png */,
+				96A9175C19BAEB2800C4E90F /* Icon-Small.png */,
+				96A9175D19BAEB2800C4E90F /* Icon-Small@2x.png */,
+				961E7E631B8F162D00C8FD08 /* Icon-Small@3x.png */,
+				96A9175E19BAEB2800C4E90F /* Icon-Spotlight-iOS7.png */,
+				96A9175F19BAEB2800C4E90F /* Icon-Spotlight-iOS7@2x.png */,
+				96A9176019BAEB2800C4E90F /* Icon.png */,
+				96A9176119BAEB2800C4E90F /* Icon@2x.png */,
+				96A9176219BAEB2800C4E90F /* iTunesArtwork */,
+				96A9176319BAEB2800C4E90F /* iTunesArtwork@2x */,
+				96A9174B19B3328100C4E90F /* background.png */,
+				96A9174C19B3328100C4E90F /* background@2x.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		96DC29E419A8213F007406AD = {
+			isa = PBXGroup;
+			children = (
+				96DC29EF19A8213F007406AD /* WallpaperResizer */,
+				96DC2A0519A82140007406AD /* WallpaperResizerTests */,
+				96DC29EE19A8213F007406AD /* Products */,
+				0C7FA1C394934712D81E7E2C /* Frameworks */,
+				C911AFF68A571B815E002E5B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		96DC29EE19A8213F007406AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96DC29ED19A8213F007406AD /* WallpaperResizer.app */,
+				96DC2A0219A82140007406AD /* WallpaperResizerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96DC29EF19A8213F007406AD /* WallpaperResizer */ = {
+			isa = PBXGroup;
+			children = (
+				CC455A2022F190C20056198C /* PurchaseService */,
+				60B2EB621BD4C16700595F4E /* Settings.bundle */,
+				96A9174919B3328100C4E90F /* Resouces */,
+				96DC29F219A82140007406AD /* AppDelegate.swift */,
+				96DC29F719A82140007406AD /* ViewController.swift */,
+				96DC29F919A82140007406AD /* Main.storyboard */,
+				96DC29FC19A82140007406AD /* Images.xcassets */,
+				96DC29F419A82140007406AD /* WallpaperResizer.xcdatamodeld */,
+				96DC29F019A8213F007406AD /* Supporting Files */,
+				960015E119C095E000FB8091 /* WallpaperResizer-Bridging-Header.h */,
+				96CAEC1B19D053300084D970 /* LaunchScreen.xib */,
+				60EEA5771E25F7B70028A74E /* Utilities */,
+			);
+			path = WallpaperResizer;
+			sourceTree = "<group>";
+		};
+		96DC29F019A8213F007406AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96DC29F119A82140007406AD /* Info.plist */,
+				96C4CABA19A8CA52000433F8 /* Localizable.strings */,
+				96A9175319B3342B00C4E90F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96DC2A0519A82140007406AD /* WallpaperResizerTests */ = {
+			isa = PBXGroup;
+			children = (
+				96DC2A0819A82140007406AD /* WallpaperResizerTests.swift */,
+				96DC2A0619A82140007406AD /* Supporting Files */,
+			);
+			path = WallpaperResizerTests;
+			sourceTree = "<group>";
+		};
+		96DC2A0619A82140007406AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96DC2A0719A82140007406AD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C911AFF68A571B815E002E5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16AA34DE09A8BE3D70BF1915 /* Pods-WallpaperResizer.debug.xcconfig */,
+				40DBD101F1A2BBE631B7BAE0 /* Pods-WallpaperResizer.release.xcconfig */,
+				7C84259AED79110C7ECD4701 /* Pods-WallpaperResizerTests.debug.xcconfig */,
+				313C332479DF926EFF30C2D0 /* Pods-WallpaperResizerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC455A2022F190C20056198C /* PurchaseService */ = {
+			isa = PBXGroup;
+			children = (
+				CC455A3B22F198AF0056198C /* Extensions */,
+				CC455A2122F190C20056198C /* GoogleAds */,
+				CC455A2822F190C20056198C /* PersonalizedConsent */,
+				CC455A2A22F190C20056198C /* InAppPurchase */,
+				CC455A2E22F190C20056198C /* PurchaseService.swift */,
+				CC455A4422F1991D0056198C /* OptionalError.swift */,
+			);
+			name = PurchaseService;
+			path = "PurchaseService-iOS/PurchaseService";
+			sourceTree = SOURCE_ROOT;
+		};
+		CC455A2122F190C20056198C /* GoogleAds */ = {
+			isa = PBXGroup;
+			children = (
+				CC455A2222F190C20056198C /* Purchase+AdMob.swift */,
+				CC455A2322F190C20056198C /* Purchase+AdMobBanner.swift */,
+				CC455A2422F190C20056198C /* UnifiedNativeAdView.xib */,
+				CC455A2522F190C20056198C /* Purchase+AdMobNative.swift */,
+				CC455A2622F190C20056198C /* Purchase+AdMobReward.swift */,
+			);
+			path = GoogleAds;
+			sourceTree = "<group>";
+		};
+		CC455A2822F190C20056198C /* PersonalizedConsent */ = {
+			isa = PBXGroup;
+			children = (
+				CC455A2922F190C20056198C /* Purchase+Consent.swift */,
+			);
+			path = PersonalizedConsent;
+			sourceTree = "<group>";
+		};
+		CC455A2A22F190C20056198C /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */,
+				CC455A2C22F190C20056198C /* Purchase+Store.swift */,
+				CC455A2D22F190C20056198C /* Purchase+Recommend.swift */,
+			);
+			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		CC455A3B22F198AF0056198C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC455A4622F19AEC0056198C /* String+Encript.swift */,
+				CC455A3E22F198AF0056198C /* UIViewController+Top.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96DC29EC19A8213F007406AD /* WallpaperResizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96DC2A0C19A82140007406AD /* Build configuration list for PBXNativeTarget "WallpaperResizer" */;
+			buildPhases = (
+				8EFF554878151AAD4CD77EB1 /* [CP] Check Pods Manifest.lock */,
+				96DC29E919A8213F007406AD /* Sources */,
+				96DC29EA19A8213F007406AD /* Frameworks */,
+				96A19A621BA426E500BC043F /* ShellScript */,
+				96DC29EB19A8213F007406AD /* Resources */,
+				D3F663D8211D531EDB518E61 /* [CP] Embed Pods Frameworks */,
+				1F713CC5B1634F9B6980CC3B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallpaperResizer;
+			productName = WallpaperResizer;
+			productReference = 96DC29ED19A8213F007406AD /* WallpaperResizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96DC2A0119A82140007406AD /* WallpaperResizerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96DC2A0F19A82140007406AD /* Build configuration list for PBXNativeTarget "WallpaperResizerTests" */;
+			buildPhases = (
+				743F39E177A9F05EEF0CF8C9 /* [CP] Check Pods Manifest.lock */,
+				96DC29FE19A82140007406AD /* Sources */,
+				96DC29FF19A82140007406AD /* Frameworks */,
+				96DC2A0019A82140007406AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96DC2A0419A82140007406AD /* PBXTargetDependency */,
+			);
+			name = WallpaperResizerTests;
+			productName = WallpaperResizerTests;
+			productReference = 96DC2A0219A82140007406AD /* WallpaperResizerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96DC29E519A8213F007406AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "鈴木 航";
+				TargetAttributes = {
+					96DC29EC19A8213F007406AD = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = F35G39V2UB;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					96DC2A0119A82140007406AD = {
+						CreatedOnToolsVersion = 6.0;
+						LastSwiftMigration = 0900;
+						TestTargetID = 96DC29EC19A8213F007406AD;
+					};
+				};
+			};
+			buildConfigurationList = 96DC29E819A8213F007406AD /* Build configuration list for PBXProject "WallpaperResizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+				ja,
+			);
+			mainGroup = 96DC29E419A8213F007406AD;
+			productRefGroup = 96DC29EE19A8213F007406AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96DC29EC19A8213F007406AD /* WallpaperResizer */,
+				96DC2A0119A82140007406AD /* WallpaperResizerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96DC29EB19A8213F007406AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96A9176F19BAEB2800C4E90F /* Icon.png in Resources */,
+				96C4CAB819A8CA52000433F8 /* Localizable.strings in Resources */,
+				60B2EB631BD4C16700595F4E /* Settings.bundle in Resources */,
+				960015E019C0955C00FB8091 /* Icon-180.png in Resources */,
+				961E7E641B8F162D00C8FD08 /* Icon-Small@3x.png in Resources */,
+				96A9176819BAEB2800C4E90F /* Icon-120.png in Resources */,
+				96CAEC1C19D053300084D970 /* LaunchScreen.xib in Resources */,
+				CC455A3222F190C20056198C /* UnifiedNativeAdView.xib in Resources */,
+				96A9177119BAEB2800C4E90F /* iTunesArtwork in Resources */,
+				96A9175119B3342B00C4E90F /* InfoPlist.strings in Resources */,
+				96A9176C19BAEB2800C4E90F /* Icon-Small@2x.png in Resources */,
+				96A9176519BAEB2800C4E90F /* Icon-72@2x.png in Resources */,
+				96A9174D19B3328100C4E90F /* background.png in Resources */,
+				96DC29FB19A82140007406AD /* Main.storyboard in Resources */,
+				96A9177219BAEB2800C4E90F /* iTunesArtwork@2x in Resources */,
+				96A9176919BAEB2800C4E90F /* Icon-iPad-Spotlight-iOS7@2x.png in Resources */,
+				96A9174E19B3328100C4E90F /* background@2x.png in Resources */,
+				96A9176B19BAEB2800C4E90F /* Icon-Small.png in Resources */,
+				96A9176A19BAEB2800C4E90F /* Icon-Small-50.png in Resources */,
+				96A9176419BAEB2800C4E90F /* Icon-72.png in Resources */,
+				96DC29FD19A82140007406AD /* Images.xcassets in Resources */,
+				96A9176D19BAEB2800C4E90F /* Icon-Spotlight-iOS7.png in Resources */,
+				96A9177019BAEB2800C4E90F /* Icon@2x.png in Resources */,
+				96A9176719BAEB2800C4E90F /* Icon-76@2x.png in Resources */,
+				96A9176E19BAEB2800C4E90F /* Icon-Spotlight-iOS7@2x.png in Resources */,
+				96CAEC1E19D0FD1F0084D970 /* WallpaperResizer.png in Resources */,
+				96A9176619BAEB2800C4E90F /* Icon-76.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DC2A0019A82140007406AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F713CC5B1634F9B6980CC3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WallpaperResizer/Pods-WallpaperResizer-resources.sh",
+				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WallpaperResizer/Pods-WallpaperResizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		743F39E177A9F05EEF0CF8C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WallpaperResizerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EFF554878151AAD4CD77EB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WallpaperResizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A19A621BA426E500BC043F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nAPP_VERSION=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" $PRODUCT_SETTINGS_PATH)\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue ${APP_VERSION}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist\"\n\nAPP_BUILD_NO=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" $PRODUCT_SETTINGS_PATH)\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:2:DefaultValue ${APP_BUILD_NO}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/Settings.bundle/Root.plist\"\n\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n# get the build number\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\necho \"Old Build number $buildNumber\"\n\n# split it by dots\narrIN=(${buildNumber/./ })\n\n# get the last element position\nlastElementPosition=$((${#arrIN[@]} - 1))\n    # get the minor version from the last array element\n    minorVersion=${arrIN[${lastElementPosition}]}\n    # Increase it by 1\n    minorVersion=$((minorVersion+1))\n    # Format it as 3 digit\n    #minorVersion=`printf \"%03d\" $minorVersion`\n    echo \"New minor version $minorVersion\"\n    # Update it on the array\n    arrIN[$lastElementPosition]=$minorVersion\n    \n    # construct the build number now by joining the array\n    buildNumber=$(IFS=. ; echo \"${arrIN[*]}\")\n    \n    echo \"New Build number $buildNumber\"\n    \n    #update it in plist\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n    \n    fi\n";
+		};
+		D3F663D8211D531EDB518E61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WallpaperResizer/Pods-WallpaperResizer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MGFinderView/MGFinderView.framework",
+				"${BUILT_PRODUCTS_DIR}/PersonalizedAdConsent/PersonalizedAdConsent.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyStoreKit/SwiftyStoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGFinderView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PersonalizedAdConsent.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyStoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WallpaperResizer/Pods-WallpaperResizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96DC29E919A8213F007406AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC455A3022F190C20056198C /* Purchase+AdMob.swift in Sources */,
+				96DC29F819A82140007406AD /* ViewController.swift in Sources */,
+				CC455A3522F190C20056198C /* Purchase+Consent.swift in Sources */,
+				CC455A3122F190C20056198C /* Purchase+AdMobBanner.swift in Sources */,
+				CC455A3422F190C20056198C /* Purchase+AdMobReward.swift in Sources */,
+				CC455A3622F190C20056198C /* Purchase+SwiftyStoreKit.swift in Sources */,
+				CC455A4222F198AF0056198C /* UIViewController+Top.swift in Sources */,
+				CC455A3322F190C20056198C /* Purchase+AdMobNative.swift in Sources */,
+				CC455A4722F19AEC0056198C /* String+Encript.swift in Sources */,
+				CC455A4522F1991D0056198C /* OptionalError.swift in Sources */,
+				CC455A3722F190C20056198C /* Purchase+Store.swift in Sources */,
+				CC455A3922F190C20056198C /* PurchaseService.swift in Sources */,
+				96DC29F319A82140007406AD /* AppDelegate.swift in Sources */,
+				96DC29F619A82140007406AD /* WallpaperResizer.xcdatamodeld in Sources */,
+				CC455A3822F190C20056198C /* Purchase+Recommend.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DC29FE19A82140007406AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96DC2A0919A82140007406AD /* WallpaperResizerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96DC2A0419A82140007406AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96DC29EC19A8213F007406AD /* WallpaperResizer */;
+			targetProxy = 96DC2A0319A82140007406AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96A9175319B3342B00C4E90F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96A9175219B3342B00C4E90F /* Base */,
+				96CAEC3419D188390084D970 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		96C4CABA19A8CA52000433F8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C4CAB919A8CA52000433F8 /* Base */,
+				96CAEC3319D188390084D970 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		96DC29F919A82140007406AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96DC29FA19A82140007406AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96DC2A0A19A82140007406AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96DC2A0B19A82140007406AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "NEND_WALLPAPER_RESIZER=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96DC2A0D19A82140007406AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16AA34DE09A8BE3D70BF1915 /* Pods-WallpaperResizer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F35G39V2UB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = WallpaperResizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DDEBUG_SWIFT";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.JchanKchan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WallpaperResizer/WallpaperResizer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		96DC2A0E19A82140007406AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DBD101F1A2BBE631B7BAE0 /* Pods-WallpaperResizer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F35G39V2UB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				INFOPLIST_FILE = WallpaperResizer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.JchanKchan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "WallpaperResizer/WallpaperResizer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		96DC2A1019A82140007406AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C84259AED79110C7ECD4701 /* Pods-WallpaperResizerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WallpaperResizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.JchanKchan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallpaperResizer.app/WallpaperResizer";
+			};
+			name = Debug;
+		};
+		96DC2A1119A82140007406AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 313C332479DF926EFF30C2D0 /* Pods-WallpaperResizerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = WallpaperResizerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.JchanKchan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallpaperResizer.app/WallpaperResizer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96DC29E819A8213F007406AD /* Build configuration list for PBXProject "WallpaperResizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DC2A0A19A82140007406AD /* Debug */,
+				96DC2A0B19A82140007406AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96DC2A0C19A82140007406AD /* Build configuration list for PBXNativeTarget "WallpaperResizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DC2A0D19A82140007406AD /* Debug */,
+				96DC2A0E19A82140007406AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96DC2A0F19A82140007406AD /* Build configuration list for PBXNativeTarget "WallpaperResizerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96DC2A1019A82140007406AD /* Debug */,
+				96DC2A1119A82140007406AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96DC29F419A82140007406AD /* WallpaperResizer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96DC29F519A82140007406AD /* WallpaperResizer.xcdatamodel */,
+			);
+			currentVersion = 96DC29F519A82140007406AD /* WallpaperResizer.xcdatamodel */;
+			path = WallpaperResizer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 96DC29E519A8213F007406AD /* Project object */;
+}

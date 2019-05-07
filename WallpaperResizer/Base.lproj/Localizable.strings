@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  WallpaperResizer
+
+  Created by 鈴木 航 on 2014/08/23.
+  Copyright (c) 2014年 鈴木 航. All rights reserved.
+*/
+cancel = "Cancel";
+ok = "OK";
+
+choose_photo = "Choose photo \nfrom camera role";
+rotate_90 = "Rotate 90";
+no_photo = "Setting no photo";
+save_camera_role = "Save photo to camera role.\nLaunch Photo Application?";
+delete_this = "Delete this editing photo?";
+maybe_unneed = "This photo is too large & it's not need editing.";
+
+launch_photoapp = "Photo";
+launch_wallpapersetting = "Wallpaper setting";
+not_launch_app = "Not this time";
+
+unlock_ad = "Unlock Ad or Restore purchase";
+
+/* ここから一時的な定義 */
+error = "Error";
+cannot_pay = "Cannot pay";
+fail_validation = "Fail validation";
+not_available = "Not available";
+restrict_in_app_purchase = "Restrict this item";
+comp_restore = "Restore item";
+cannot_find_pay_history = "Cannot find pay history";

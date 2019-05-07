@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  WallpaperResizer
+
+  Created by 鈴木 航 on 2014/08/23.
+  Copyright (c) 2014年 鈴木 航. All rights reserved.
+*/
+cancel = "キャンセル";
+ok = "OK";
+
+choose_photo = "カメラロールから\n写真を選択してください";
+rotate_90 = "90度回転";
+no_photo = "写真がセットされていません";
+save_camera_role = "壁紙用の画像をカメラロールに保存しました。\n壁紙へ設定しますか？";
+delete_this = "編集中の写真を削除する";
+maybe_unneed = "この写真は十分大きいので加工が不要と思われます";
+
+launch_photoapp = "写真アプリへ";
+launch_wallpapersetting = "壁紙設定へ";
+not_launch_app = "何もしない";
+
+unlock_ad = "広告表示を解除または購入履歴を復元";
+
+/* ここから一時的な定義 */
+error = "エラー";
+cannot_pay = "支払いができませんでした";
+fail_validation = "有効化できませんでした";
+not_available = "こちらはまだ利用できません";
+restrict_in_app_purchase = "無効なアイテムです";
+comp_restore = "リストアしました";
+cannot_find_pay_history = "購入履歴が見つかりませんでした";
