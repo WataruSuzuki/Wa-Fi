@@ -27,7 +27,7 @@ class ViewController: UIViewController,
     
     // TODO: KeyInAppPurchase.UNLOCK_AD
     private func setupAdMob() {
-        PurchaseService.shared.confirmPersonalizedConsent(publisherIds: ["your_pub_id"], completion: { (confirmed) in
+        PurchaseService.shared.confirmPersonalizedConsent(publisherIds: ["your_pub_id"], productId: "your_product_id", privacyPolicyUrl: AppDelegate.privacyPolicyUrl, completion: { (confirmed) in
             if confirmed {
                 PurchaseService.shared.loadReward(unitId: "your_reward_unit_id")
                 self.bannerView = PurchaseService.shared.bannerView(unitId: "your_banner_unit_id", rootViewController: self)

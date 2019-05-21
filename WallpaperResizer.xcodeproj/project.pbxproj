@@ -41,17 +41,15 @@
 		96DC2A0919A82140007406AD /* WallpaperResizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC2A0819A82140007406AD /* WallpaperResizerTests.swift */; };
 		CC455A3022F190C20056198C /* Purchase+AdMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2222F190C20056198C /* Purchase+AdMob.swift */; };
 		CC455A3122F190C20056198C /* Purchase+AdMobBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2322F190C20056198C /* Purchase+AdMobBanner.swift */; };
-		CC455A3222F190C20056198C /* UnifiedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC455A2422F190C20056198C /* UnifiedNativeAdView.xib */; };
-		CC455A3322F190C20056198C /* Purchase+AdMobNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2522F190C20056198C /* Purchase+AdMobNative.swift */; };
 		CC455A3422F190C20056198C /* Purchase+AdMobReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2622F190C20056198C /* Purchase+AdMobReward.swift */; };
 		CC455A3522F190C20056198C /* Purchase+Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2922F190C20056198C /* Purchase+Consent.swift */; };
 		CC455A3622F190C20056198C /* Purchase+SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */; };
 		CC455A3722F190C20056198C /* Purchase+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2C22F190C20056198C /* Purchase+Store.swift */; };
-		CC455A3822F190C20056198C /* Purchase+Recommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2D22F190C20056198C /* Purchase+Recommend.swift */; };
 		CC455A3922F190C20056198C /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2E22F190C20056198C /* PurchaseService.swift */; };
 		CC455A4222F198AF0056198C /* UIViewController+Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A3E22F198AF0056198C /* UIViewController+Top.swift */; };
 		CC455A4522F1991D0056198C /* OptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4422F1991D0056198C /* OptionalError.swift */; };
 		CC455A4722F19AEC0056198C /* String+Encript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4622F19AEC0056198C /* String+Encript.swift */; };
+		CCD08EA823165F10007116AA /* Purchase+AdMobInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */; };
 		F073B0C51E24C753002BB4F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F073B0C41E24C753002BB4F4 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,17 +111,15 @@
 		C88382F0F12122953B150E09 /* Pods_WallpaperResizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallpaperResizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC455A2222F190C20056198C /* Purchase+AdMob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMob.swift"; sourceTree = "<group>"; };
 		CC455A2322F190C20056198C /* Purchase+AdMobBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobBanner.swift"; sourceTree = "<group>"; };
-		CC455A2422F190C20056198C /* UnifiedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnifiedNativeAdView.xib; sourceTree = "<group>"; };
-		CC455A2522F190C20056198C /* Purchase+AdMobNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobNative.swift"; sourceTree = "<group>"; };
 		CC455A2622F190C20056198C /* Purchase+AdMobReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobReward.swift"; sourceTree = "<group>"; };
 		CC455A2922F190C20056198C /* Purchase+Consent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Consent.swift"; sourceTree = "<group>"; };
 		CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+SwiftyStoreKit.swift"; sourceTree = "<group>"; };
 		CC455A2C22F190C20056198C /* Purchase+Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Store.swift"; sourceTree = "<group>"; };
-		CC455A2D22F190C20056198C /* Purchase+Recommend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Recommend.swift"; sourceTree = "<group>"; };
 		CC455A2E22F190C20056198C /* PurchaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
 		CC455A3E22F198AF0056198C /* UIViewController+Top.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Top.swift"; sourceTree = "<group>"; };
 		CC455A4422F1991D0056198C /* OptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalError.swift; sourceTree = "<group>"; };
 		CC455A4622F19AEC0056198C /* String+Encript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Encript.swift"; sourceTree = "<group>"; };
+		CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobInterstitial.swift"; sourceTree = "<group>"; };
 		F073B0C41E24C753002BB4F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -298,8 +294,7 @@
 			children = (
 				CC455A2222F190C20056198C /* Purchase+AdMob.swift */,
 				CC455A2322F190C20056198C /* Purchase+AdMobBanner.swift */,
-				CC455A2422F190C20056198C /* UnifiedNativeAdView.xib */,
-				CC455A2522F190C20056198C /* Purchase+AdMobNative.swift */,
+				CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */,
 				CC455A2622F190C20056198C /* Purchase+AdMobReward.swift */,
 			);
 			path = GoogleAds;
@@ -318,7 +313,6 @@
 			children = (
 				CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */,
 				CC455A2C22F190C20056198C /* Purchase+Store.swift */,
-				CC455A2D22F190C20056198C /* Purchase+Recommend.swift */,
 			);
 			path = InAppPurchase;
 			sourceTree = "<group>";
@@ -437,7 +431,6 @@
 				961E7E641B8F162D00C8FD08 /* Icon-Small@3x.png in Resources */,
 				96A9176819BAEB2800C4E90F /* Icon-120.png in Resources */,
 				96CAEC1C19D053300084D970 /* LaunchScreen.xib in Resources */,
-				CC455A3222F190C20056198C /* UnifiedNativeAdView.xib in Resources */,
 				96A9177119BAEB2800C4E90F /* iTunesArtwork in Resources */,
 				96A9175119B3342B00C4E90F /* InfoPlist.strings in Resources */,
 				96A9176C19BAEB2800C4E90F /* Icon-Small@2x.png in Resources */,
@@ -577,16 +570,15 @@
 				CC455A3522F190C20056198C /* Purchase+Consent.swift in Sources */,
 				CC455A3122F190C20056198C /* Purchase+AdMobBanner.swift in Sources */,
 				CC455A3422F190C20056198C /* Purchase+AdMobReward.swift in Sources */,
+				CCD08EA823165F10007116AA /* Purchase+AdMobInterstitial.swift in Sources */,
 				CC455A3622F190C20056198C /* Purchase+SwiftyStoreKit.swift in Sources */,
 				CC455A4222F198AF0056198C /* UIViewController+Top.swift in Sources */,
-				CC455A3322F190C20056198C /* Purchase+AdMobNative.swift in Sources */,
 				CC455A4722F19AEC0056198C /* String+Encript.swift in Sources */,
 				CC455A4522F1991D0056198C /* OptionalError.swift in Sources */,
 				CC455A3722F190C20056198C /* Purchase+Store.swift in Sources */,
 				CC455A3922F190C20056198C /* PurchaseService.swift in Sources */,
 				96DC29F319A82140007406AD /* AppDelegate.swift in Sources */,
 				96DC29F619A82140007406AD /* WallpaperResizer.xcdatamodeld in Sources */,
-				CC455A3822F190C20056198C /* Purchase+Recommend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
