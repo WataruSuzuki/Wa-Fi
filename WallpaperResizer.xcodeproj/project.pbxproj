@@ -46,9 +46,22 @@
 		CC455A3622F190C20056198C /* Purchase+SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */; };
 		CC455A3722F190C20056198C /* Purchase+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2C22F190C20056198C /* Purchase+Store.swift */; };
 		CC455A3922F190C20056198C /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2E22F190C20056198C /* PurchaseService.swift */; };
-		CC455A4222F198AF0056198C /* UIViewController+Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A3E22F198AF0056198C /* UIViewController+Top.swift */; };
 		CC455A4522F1991D0056198C /* OptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4422F1991D0056198C /* OptionalError.swift */; };
-		CC455A4722F19AEC0056198C /* String+Encript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4622F19AEC0056198C /* String+Encript.swift */; };
+		CC5CCDCC243440AE0041F5E6 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDB4243440AE0041F5E6 /* UIImage+Resize.swift */; };
+		CC5CCDCD243440AE0041F5E6 /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDB5243440AE0041F5E6 /* UIImage+Orientation.swift */; };
+		CC5CCDCE243440AE0041F5E6 /* UIImage+Translucent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDB6243440AE0041F5E6 /* UIImage+Translucent.swift */; };
+		CC5CCDD1243440AE0041F5E6 /* UITableView+CustomNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDBA243440AE0041F5E6 /* UITableView+CustomNib.swift */; };
+		CC5CCDD2243440AE0041F5E6 /* UICollectionView+CellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDBB243440AE0041F5E6 /* UICollectionView+CellSize.swift */; };
+		CC5CCDD3243440AE0041F5E6 /* UICollectionView+CustomNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDBC243440AE0041F5E6 /* UICollectionView+CustomNib.swift */; };
+		CC5CCDD4243440AE0041F5E6 /* Date+FormatterStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDBE243440AE0041F5E6 /* Date+FormatterStr.swift */; };
+		CC5CCDD5243440AE0041F5E6 /* Enum+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDC0243440AE0041F5E6 /* Enum+Description.swift */; };
+		CC5CCDD7243440AE0041F5E6 /* AlertControl+Cancel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDC3243440AE0041F5E6 /* AlertControl+Cancel.swift */; };
+		CC5CCDD8243440AE0041F5E6 /* UIViewController+Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDC4243440AE0041F5E6 /* UIViewController+Activity.swift */; };
+		CC5CCDD9243440AE0041F5E6 /* UIViewController+Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDC5243440AE0041F5E6 /* UIViewController+Top.swift */; };
+		CC5CCDDB243440AE0041F5E6 /* String+Encript.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDC8243440AE0041F5E6 /* String+Encript.swift */; };
+		CC5CCDDC243440AE0041F5E6 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDC9243440AE0041F5E6 /* String+Localized.swift */; };
+		CC5CCDDD243440AE0041F5E6 /* String+DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDCA243440AE0041F5E6 /* String+DateFormat.swift */; };
+		CC5CCDDE243440AE0041F5E6 /* String+Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5CCDCB243440AE0041F5E6 /* String+Capture.swift */; };
 		CCD08EA823165F10007116AA /* Purchase+AdMobInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */; };
 		F073B0C51E24C753002BB4F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F073B0C41E24C753002BB4F4 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
@@ -116,9 +129,22 @@
 		CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+SwiftyStoreKit.swift"; sourceTree = "<group>"; };
 		CC455A2C22F190C20056198C /* Purchase+Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Store.swift"; sourceTree = "<group>"; };
 		CC455A2E22F190C20056198C /* PurchaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
-		CC455A3E22F198AF0056198C /* UIViewController+Top.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Top.swift"; sourceTree = "<group>"; };
 		CC455A4422F1991D0056198C /* OptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalError.swift; sourceTree = "<group>"; };
-		CC455A4622F19AEC0056198C /* String+Encript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Encript.swift"; sourceTree = "<group>"; };
+		CC5CCDB4243440AE0041F5E6 /* UIImage+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		CC5CCDB5243440AE0041F5E6 /* UIImage+Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation.swift"; sourceTree = "<group>"; };
+		CC5CCDB6243440AE0041F5E6 /* UIImage+Translucent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Translucent.swift"; sourceTree = "<group>"; };
+		CC5CCDBA243440AE0041F5E6 /* UITableView+CustomNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+CustomNib.swift"; sourceTree = "<group>"; };
+		CC5CCDBB243440AE0041F5E6 /* UICollectionView+CellSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CellSize.swift"; sourceTree = "<group>"; };
+		CC5CCDBC243440AE0041F5E6 /* UICollectionView+CustomNib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+CustomNib.swift"; sourceTree = "<group>"; };
+		CC5CCDBE243440AE0041F5E6 /* Date+FormatterStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+FormatterStr.swift"; sourceTree = "<group>"; };
+		CC5CCDC0243440AE0041F5E6 /* Enum+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Enum+Description.swift"; sourceTree = "<group>"; };
+		CC5CCDC3243440AE0041F5E6 /* AlertControl+Cancel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertControl+Cancel.swift"; sourceTree = "<group>"; };
+		CC5CCDC4243440AE0041F5E6 /* UIViewController+Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Activity.swift"; sourceTree = "<group>"; };
+		CC5CCDC5243440AE0041F5E6 /* UIViewController+Top.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Top.swift"; sourceTree = "<group>"; };
+		CC5CCDC8243440AE0041F5E6 /* String+Encript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Encript.swift"; sourceTree = "<group>"; };
+		CC5CCDC9243440AE0041F5E6 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		CC5CCDCA243440AE0041F5E6 /* String+DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DateFormat.swift"; sourceTree = "<group>"; };
+		CC5CCDCB243440AE0041F5E6 /* String+Capture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Capture.swift"; sourceTree = "<group>"; };
 		CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobInterstitial.swift"; sourceTree = "<group>"; };
 		F073B0C41E24C753002BB4F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -221,6 +247,7 @@
 		96DC29EF19A8213F007406AD /* WallpaperResizer */ = {
 			isa = PBXGroup;
 			children = (
+				CC5CCDB2243440AE0041F5E6 /* SwiftExtensionChimera */,
 				CC455A2022F190C20056198C /* PurchaseService */,
 				60B2EB621BD4C16700595F4E /* Settings.bundle */,
 				96A9174919B3328100C4E90F /* Resouces */,
@@ -278,7 +305,6 @@
 		CC455A2022F190C20056198C /* PurchaseService */ = {
 			isa = PBXGroup;
 			children = (
-				CC455A3B22F198AF0056198C /* Extensions */,
 				CC455A2122F190C20056198C /* GoogleAds */,
 				CC455A2822F190C20056198C /* PersonalizedConsent */,
 				CC455A2A22F190C20056198C /* InAppPurchase */,
@@ -317,13 +343,74 @@
 			path = InAppPurchase;
 			sourceTree = "<group>";
 		};
-		CC455A3B22F198AF0056198C /* Extensions */ = {
+		CC5CCDB2243440AE0041F5E6 /* SwiftExtensionChimera */ = {
 			isa = PBXGroup;
 			children = (
-				CC455A4622F19AEC0056198C /* String+Encript.swift */,
-				CC455A3E22F198AF0056198C /* UIViewController+Top.swift */,
+				CC5CCDB3243440AE0041F5E6 /* UIImage */,
+				CC5CCDB9243440AE0041F5E6 /* UIView */,
+				CC5CCDBD243440AE0041F5E6 /* Date */,
+				CC5CCDBF243440AE0041F5E6 /* Enum */,
+				CC5CCDC2243440AE0041F5E6 /* UIViewController */,
+				CC5CCDC7243440AE0041F5E6 /* String */,
 			);
-			path = Extensions;
+			path = SwiftExtensionChimera;
+			sourceTree = SOURCE_ROOT;
+		};
+		CC5CCDB3243440AE0041F5E6 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				CC5CCDB4243440AE0041F5E6 /* UIImage+Resize.swift */,
+				CC5CCDB5243440AE0041F5E6 /* UIImage+Orientation.swift */,
+				CC5CCDB6243440AE0041F5E6 /* UIImage+Translucent.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		CC5CCDB9243440AE0041F5E6 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				CC5CCDBA243440AE0041F5E6 /* UITableView+CustomNib.swift */,
+				CC5CCDBB243440AE0041F5E6 /* UICollectionView+CellSize.swift */,
+				CC5CCDBC243440AE0041F5E6 /* UICollectionView+CustomNib.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		CC5CCDBD243440AE0041F5E6 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				CC5CCDBE243440AE0041F5E6 /* Date+FormatterStr.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		CC5CCDBF243440AE0041F5E6 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				CC5CCDC0243440AE0041F5E6 /* Enum+Description.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		CC5CCDC2243440AE0041F5E6 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CC5CCDC3243440AE0041F5E6 /* AlertControl+Cancel.swift */,
+				CC5CCDC4243440AE0041F5E6 /* UIViewController+Activity.swift */,
+				CC5CCDC5243440AE0041F5E6 /* UIViewController+Top.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		CC5CCDC7243440AE0041F5E6 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				CC5CCDC8243440AE0041F5E6 /* String+Encript.swift */,
+				CC5CCDC9243440AE0041F5E6 /* String+Localized.swift */,
+				CC5CCDCA243440AE0041F5E6 /* String+DateFormat.swift */,
+				CC5CCDCB243440AE0041F5E6 /* String+Capture.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,16 +655,29 @@
 				CC455A3022F190C20056198C /* Purchase+AdMob.swift in Sources */,
 				96DC29F819A82140007406AD /* ViewController.swift in Sources */,
 				CC455A3522F190C20056198C /* Purchase+Consent.swift in Sources */,
+				CC5CCDDD243440AE0041F5E6 /* String+DateFormat.swift in Sources */,
+				CC5CCDD5243440AE0041F5E6 /* Enum+Description.swift in Sources */,
+				CC5CCDD4243440AE0041F5E6 /* Date+FormatterStr.swift in Sources */,
 				CC455A3122F190C20056198C /* Purchase+AdMobBanner.swift in Sources */,
 				CC455A3422F190C20056198C /* Purchase+AdMobReward.swift in Sources */,
+				CC5CCDD9243440AE0041F5E6 /* UIViewController+Top.swift in Sources */,
 				CCD08EA823165F10007116AA /* Purchase+AdMobInterstitial.swift in Sources */,
 				CC455A3622F190C20056198C /* Purchase+SwiftyStoreKit.swift in Sources */,
-				CC455A4222F198AF0056198C /* UIViewController+Top.swift in Sources */,
-				CC455A4722F19AEC0056198C /* String+Encript.swift in Sources */,
+				CC5CCDD1243440AE0041F5E6 /* UITableView+CustomNib.swift in Sources */,
+				CC5CCDCC243440AE0041F5E6 /* UIImage+Resize.swift in Sources */,
+				CC5CCDD7243440AE0041F5E6 /* AlertControl+Cancel.swift in Sources */,
+				CC5CCDDE243440AE0041F5E6 /* String+Capture.swift in Sources */,
 				CC455A4522F1991D0056198C /* OptionalError.swift in Sources */,
+				CC5CCDD8243440AE0041F5E6 /* UIViewController+Activity.swift in Sources */,
 				CC455A3722F190C20056198C /* Purchase+Store.swift in Sources */,
+				CC5CCDDC243440AE0041F5E6 /* String+Localized.swift in Sources */,
+				CC5CCDCD243440AE0041F5E6 /* UIImage+Orientation.swift in Sources */,
 				CC455A3922F190C20056198C /* PurchaseService.swift in Sources */,
+				CC5CCDDB243440AE0041F5E6 /* String+Encript.swift in Sources */,
+				CC5CCDCE243440AE0041F5E6 /* UIImage+Translucent.swift in Sources */,
 				96DC29F319A82140007406AD /* AppDelegate.swift in Sources */,
+				CC5CCDD2243440AE0041F5E6 /* UICollectionView+CellSize.swift in Sources */,
+				CC5CCDD3243440AE0041F5E6 /* UICollectionView+CustomNib.swift in Sources */,
 				96DC29F619A82140007406AD /* WallpaperResizer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
