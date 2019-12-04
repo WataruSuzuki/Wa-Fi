@@ -95,9 +95,9 @@ class ViewController: UIViewController,
     }
     
     @IBAction func tapOrganaizeButton(_ sender:AnyObject){
-        if UIImagePickerController .isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
+        if UIImagePickerController .isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary) {
             let picker = UIImagePickerController()
-            picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+            picker.sourceType = UIImagePickerController.SourceType.photoLibrary
             picker.allowsEditing = true
             picker.delegate = self
             
@@ -121,7 +121,7 @@ class ViewController: UIViewController,
     
     func showAlertError(_ message: String) {
         let okStr = NSLocalizedString("ok", comment: "")
-        let tapAction = UIAlertAction(title: okStr, style: UIAlertActionStyle.default){
+        let tapAction = UIAlertAction(title: okStr, style: UIAlertAction.Style.default){
             action in
         }
         let alertController = UIAlertController(title: nil, message: message as String, preferredStyle: .alert)
@@ -140,13 +140,13 @@ class ViewController: UIViewController,
     }
     
     func showAlertControllerLaunchPhotoApp(_ cancelStr: String, launchPhotoStr: String, launchSettingStr: String, message: String){
-        let cancelAction = UIAlertAction(title: cancelStr, style: UIAlertActionStyle.default){
+        let cancelAction = UIAlertAction(title: cancelStr, style: UIAlertAction.Style.default){
             action in self.handleCancel()
         }
-        let launchPhotoAction = UIAlertAction(title: launchPhotoStr, style: UIAlertActionStyle.default){
+        let launchPhotoAction = UIAlertAction(title: launchPhotoStr, style: UIAlertAction.Style.default){
             action in self.handleLaunchPhotoApp()
         }
-        let launchSettingAction = UIAlertAction(title: launchSettingStr, style: UIAlertActionStyle.default){
+        let launchSettingAction = UIAlertAction(title: launchSettingStr, style: UIAlertAction.Style.default){
             action in self.handleLaunchWallpaperSetting()
         }
         
@@ -170,10 +170,10 @@ class ViewController: UIViewController,
     }
     
     func showConfirmDeleteAlertController(_ cancelStr: String, deleteStr: String){
-        let cancelAction = UIAlertAction(title: cancelStr, style: UIAlertActionStyle.cancel){
+        let cancelAction = UIAlertAction(title: cancelStr, style: UIAlertAction.Style.cancel){
             action in self.handleCancel()
         }
-        let deleteAction = UIAlertAction(title: deleteStr, style: UIAlertActionStyle.destructive){
+        let deleteAction = UIAlertAction(title: deleteStr, style: UIAlertAction.Style.destructive){
             action in self.handleDelete()
         }
         
@@ -225,21 +225,21 @@ class ViewController: UIViewController,
         let profileSettingScheme = ":root=Wallpaper"
         
         if #available(iOS 10.0, *) {
-            UIApplication.shared.open(URL(string: prefixStr + profileSettingScheme)!, completionHandler: nil)
+            UIApplication.shared.openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary(()URL(string: prefixStr + profileSettingScheme)!, completionHandler: nil)
         } else {
             UIApplication.shared.openURL(URL(string: prefixStr + profileSettingScheme)!)
         }
     }
 
     func rotateImageTo90(_ currentImage:UIImage) ->UIImage {
-        var orientation = UIImageOrientation.up
+        var orientation = UIImage.Orientation.up
         
-        if currentImage.imageOrientation == UIImageOrientation.up {
-            orientation = UIImageOrientation.right
-        } else if currentImage.imageOrientation == UIImageOrientation.right {
-            orientation = UIImageOrientation.down
-        } else if currentImage.imageOrientation == UIImageOrientation.down {
-            orientation = UIImageOrientation.left
+        if currentImage.imageOrientation == UIImage.Orientation.up {
+            orientation = UIImage.Orientation.right
+        } else if currentImage.imageOrientation == UIImage.Orientation.right {
+            orientation = UIImage.Orientation.down
+        } else if currentImage.imageOrientation == UIImage.Orientation.down {
+            orientation = UIImage.Orientation.left
         }
         
         return UIImage(cgImage: currentImage.cgImage!, scale: currentImage.scale, orientation: orientation)
@@ -253,20 +253,23 @@ class ViewController: UIViewController,
         }
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        let rectValue = info[UIImagePickerControllerCropRect] as! NSValue
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
+        let rectValue = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.cropRect)] as! NSValue
         originalRect = rectValue.cgRectValue
         
         // original image
-        var originalImage : UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        var originalImage : UIImage = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as! UIImage
         // cropped image
-        if originalImage.imageOrientation != UIImageOrientation.up {
-            originalImage = UIImage(cgImage: originalImage.cgImage!, scale: originalImage.scale, orientation: UIImageOrientation.up)
+        if originalImage.imageOrientation != UIImage.Orientation.up {
+            originalImage = UIImage(cgImage: originalImage.cgImage!, scale: originalImage.scale, orientation: UIImage.Orientation.up)
         }
         let imageRef : CGImage = originalImage.cgImage!.cropping(to: originalRect)!
         let croppedImage : UIImage = UIImage(cgImage: imageRef)
         
-        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
         imageView.image = croppedImage;
         
         dismiss(animated: true, completion: nil)
@@ -316,3 +319,18 @@ class ViewController: UIViewController,
 }
 
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
+}

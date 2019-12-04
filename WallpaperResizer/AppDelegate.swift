@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static let privacyPolicyUrl = "https://watarusuzuki.github.io/Wa-Fi/PRIVACY_POLICY.html"
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         PurchaseService.shared.completeTransactions()
         // Override point for customization after application launch.
         registerNotifications(application)
