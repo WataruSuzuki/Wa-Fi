@@ -1,6 +1,3 @@
 [submodule "PurchaseService-iOS"]
 	path = PurchaseService-iOS
 	url = https://github.com/WataruSuzuki/PurchaseService-iOS.git
-[submodule "SwiftExtensionChimera"]
-	path = SwiftExtensionChimera
-	url = https://github.com/WataruSuzuki/SwiftExtensionChimera.git

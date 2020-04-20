@@ -1,74 +1,87 @@
 PODS:
-  - Google-Mobile-Ads-SDK (7.49.0):
+  - Google-Mobile-Ads-SDK (7.66.0):
     - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.1.1):
-    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
-    - GoogleUtilities/Network (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - nanopb (~> 0.3)
-  - GoogleMobileAdsMediationNend (5.1.1.0):
-    - Google-Mobile-Ads-SDK (>= 7.42.2)
-    - NendSDK_iOS (= 5.1.1)
-  - GoogleUtilities/AppDelegateSwizzler (6.2.5):
+    - GoogleUserMessagingPlatform (~> 1.1)
+  - GoogleAppMeasurement (6.8.3):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
+    - GoogleUtilities/MethodSwizzler (~> 6.7)
+    - GoogleUtilities/Network (~> 6.7)
+    - "GoogleUtilities/NSData+zlib (~> 6.7)"
+    - nanopb (~> 1.30906.0)
+  - GoogleMobileAdsMediationNend (7.0.0.0):
+    - Google-Mobile-Ads-SDK (>= 7.65.0)
+    - NendSDK_iOS (= 7.0.0)
+  - GoogleUserMessagingPlatform (1.2.0)
+  - GoogleUtilities/AppDelegateSwizzler (6.7.2):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.2.5)
-  - GoogleUtilities/Logger (6.2.5):
+  - GoogleUtilities/Environment (6.7.2):
+    - PromisesObjC (~> 1.2)
+  - GoogleUtilities/Logger (6.7.2):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.2.5):
+  - GoogleUtilities/MethodSwizzler (6.7.2):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.2.5):
+  - GoogleUtilities/Network (6.7.2):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.2.5)"
-  - GoogleUtilities/Reachability (6.2.5):
+  - "GoogleUtilities/NSData+zlib (6.7.2)"
+  - GoogleUtilities/Reachability (6.7.2):
     - GoogleUtilities/Logger
   - MGFinderView (2.1)
-  - nanopb (0.3.901):
-    - nanopb/decode (= 0.3.901)
-    - nanopb/encode (= 0.3.901)
-  - nanopb/decode (0.3.901)
-  - nanopb/encode (0.3.901)
-  - NendSDK_iOS (5.1.1)
-  - PersonalizedAdConsent (1.0.3)
-  - PureLayout (3.1.4)
-  - SwiftyStoreKit (0.15.0)
+  - nanopb (1.30906.0):
+    - nanopb/decode (= 1.30906.0)
+    - nanopb/encode (= 1.30906.0)
+  - nanopb/decode (1.30906.0)
+  - nanopb/encode (1.30906.0)
+  - NendSDK_iOS (7.0.0)
+  - PersonalizedAdConsent (1.0.5)
+  - PromisesObjC (1.2.10)
+  - PureLayout (3.1.6)
+  - SwiftExtensionChimera (0.0.6):
+    - PureLayout
+  - SwiftyStoreKit (0.16.1)
 
 DEPENDENCIES:
   - GoogleMobileAdsMediationNend
   - MGFinderView
   - PersonalizedAdConsent
   - PureLayout
+  - SwiftExtensionChimera
   - SwiftyStoreKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleMobileAdsMediationNend
+    - GoogleUserMessagingPlatform
     - GoogleUtilities
     - MGFinderView
     - nanopb
     - NendSDK_iOS
     - PersonalizedAdConsent
+    - PromisesObjC
     - PureLayout
+    - SwiftExtensionChimera
     - SwiftyStoreKit
 
 SPEC CHECKSUMS:
-  Google-Mobile-Ads-SDK: df315e371b29cf935f7ea872e7bdec39462a100e
-  GoogleAppMeasurement: 86a82f0e1f20b8eedf8e20326530138fd71409de
-  GoogleMobileAdsMediationNend: a701cf86a46fe0c95bdf2c861044256e157b3bda
-  GoogleUtilities: e7dc37039b19df7fe543479d3e4a02ac8d11bb69
+  Google-Mobile-Ads-SDK: 7d7074359c040f5add4e0963bf860e14690060d0
+  GoogleAppMeasurement: 966e88df9d19c15715137bb2ddaf52373f111436
+  GoogleMobileAdsMediationNend: 220a414505c8b7ed96093e53680cc684710c48ca
+  GoogleUserMessagingPlatform: c85530d930ba509583aa5a6d50a10aca22cf8502
+  GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
   MGFinderView: e5fad71f21a8a4faabeee6d804b2d9abb41575b1
-  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  NendSDK_iOS: 0e86624061da461eb5a8e825e7b955e556f61541
-  PersonalizedAdConsent: b50a8a5d6065b6db23121e8fcc0dce2ae983f6ea
-  PureLayout: f08c01b8dec00bb14a1fefa3de4c7d9c265df85e
-  SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
+  nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
+  NendSDK_iOS: 5f4d2574d19aece3ebf8ef1833ece0c4af48da23
+  PersonalizedAdConsent: dbecabb3467df967c16d9cebc2ef4a8890e4bbd8
+  PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
+  SwiftExtensionChimera: a1328de9cfd065c79e11f4343d1e8ff9ab04e8a4
+  SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
 
-PODFILE CHECKSUM: 9897f9497654e67ed8cbbf348e9f89bf2fc98026
+PODFILE CHECKSUM: 9a19ed9f88fc51a75947c4e10a2bf22a12c05269
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.9.3

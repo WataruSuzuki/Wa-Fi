@@ -9,6 +9,7 @@ target "WallpaperResizer" do
   pod 'PersonalizedAdConsent'
   pod 'SwiftyStoreKit'
   pod 'GoogleMobileAdsMediationNend'
+  pod 'SwiftExtensionChimera'
 
   target 'WallpaperResizerTests' do
     inherit! :search_paths
