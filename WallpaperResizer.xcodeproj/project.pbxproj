@@ -43,11 +43,13 @@
 		CC455A3122F190C20056198C /* Purchase+AdMobBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2322F190C20056198C /* Purchase+AdMobBanner.swift */; };
 		CC455A3422F190C20056198C /* Purchase+AdMobReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2622F190C20056198C /* Purchase+AdMobReward.swift */; };
 		CC455A3522F190C20056198C /* Purchase+Consent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2922F190C20056198C /* Purchase+Consent.swift */; };
-		CC455A3622F190C20056198C /* Purchase+SwiftyStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */; };
-		CC455A3722F190C20056198C /* Purchase+Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2C22F190C20056198C /* Purchase+Store.swift */; };
+		CC455A3722F190C20056198C /* Purchase+Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2C22F190C20056198C /* Purchase+Product.swift */; };
 		CC455A3922F190C20056198C /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2E22F190C20056198C /* PurchaseService.swift */; };
-		CC455A4522F1991D0056198C /* OptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4422F1991D0056198C /* OptionalError.swift */; };
+		CC455A4522F1991D0056198C /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4422F1991D0056198C /* ErrorHandler.swift */; };
 		CCD08EA823165F10007116AA /* Purchase+AdMobInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */; };
+		CCFBC63A252EA17C00EE6215 /* VC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBC639252EA17C00EE6215 /* VC+Action.swift */; };
+		CCFBC642252EA2E400EE6215 /* VC+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBC641252EA2E400EE6215 /* VC+Alert.swift */; };
+		CCFBC648252EA5C000EE6215 /* VC+ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBC647252EA5C000EE6215 /* VC+ImagePicker.swift */; };
 		F073B0C51E24C753002BB4F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F073B0C41E24C753002BB4F4 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,11 +113,14 @@
 		CC455A2322F190C20056198C /* Purchase+AdMobBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobBanner.swift"; sourceTree = "<group>"; };
 		CC455A2622F190C20056198C /* Purchase+AdMobReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobReward.swift"; sourceTree = "<group>"; };
 		CC455A2922F190C20056198C /* Purchase+Consent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Consent.swift"; sourceTree = "<group>"; };
-		CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+SwiftyStoreKit.swift"; sourceTree = "<group>"; };
-		CC455A2C22F190C20056198C /* Purchase+Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Store.swift"; sourceTree = "<group>"; };
+		CC455A2B22F190C20056198C /* Purchase+Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Subscription.swift"; sourceTree = "<group>"; };
+		CC455A2C22F190C20056198C /* Purchase+Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Product.swift"; sourceTree = "<group>"; };
 		CC455A2E22F190C20056198C /* PurchaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
-		CC455A4422F1991D0056198C /* OptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalError.swift; sourceTree = "<group>"; };
+		CC455A4422F1991D0056198C /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobInterstitial.swift"; sourceTree = "<group>"; };
+		CCFBC639252EA17C00EE6215 /* VC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Action.swift"; sourceTree = "<group>"; };
+		CCFBC641252EA2E400EE6215 /* VC+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Alert.swift"; sourceTree = "<group>"; };
+		CCFBC647252EA5C000EE6215 /* VC+ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+ImagePicker.swift"; sourceTree = "<group>"; };
 		F073B0C41E24C753002BB4F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -221,7 +226,7 @@
 				60B2EB621BD4C16700595F4E /* Settings.bundle */,
 				96A9174919B3328100C4E90F /* Resouces */,
 				96DC29F219A82140007406AD /* AppDelegate.swift */,
-				96DC29F719A82140007406AD /* ViewController.swift */,
+				CCFBC635252EA0E000EE6215 /* ViewControllers */,
 				96DC29F919A82140007406AD /* Main.storyboard */,
 				96DC29FC19A82140007406AD /* Images.xcassets */,
 				96DC29F419A82140007406AD /* WallpaperResizer.xcdatamodeld */,
@@ -278,7 +283,7 @@
 				CC455A2822F190C20056198C /* PersonalizedConsent */,
 				CC455A2A22F190C20056198C /* InAppPurchase */,
 				CC455A2E22F190C20056198C /* PurchaseService.swift */,
-				CC455A4422F1991D0056198C /* OptionalError.swift */,
+				CC455A4422F1991D0056198C /* ErrorHandler.swift */,
 			);
 			name = PurchaseService;
 			path = "PurchaseService-iOS/PurchaseService";
@@ -306,10 +311,29 @@
 		CC455A2A22F190C20056198C /* InAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
-				CC455A2B22F190C20056198C /* Purchase+SwiftyStoreKit.swift */,
-				CC455A2C22F190C20056198C /* Purchase+Store.swift */,
+				CC455A2B22F190C20056198C /* Purchase+Subscription.swift */,
+				CC455A2C22F190C20056198C /* Purchase+Product.swift */,
 			);
 			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		CCFBC635252EA0E000EE6215 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				96DC29F719A82140007406AD /* ViewController.swift */,
+				CCFBC638252EA14900EE6215 /* Extensions */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CCFBC638252EA14900EE6215 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CCFBC639252EA17C00EE6215 /* VC+Action.swift */,
+				CCFBC641252EA2E400EE6215 /* VC+Alert.swift */,
+				CCFBC647252EA5C000EE6215 /* VC+ImagePicker.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -524,6 +548,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WallpaperResizer/Pods-WallpaperResizer-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 				"${BUILT_PRODUCTS_DIR}/MGFinderView/MGFinderView.framework",
 				"${BUILT_PRODUCTS_DIR}/PersonalizedAdConsent/PersonalizedAdConsent.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
@@ -535,6 +560,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGFinderView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PersonalizedAdConsent.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
@@ -558,15 +584,17 @@
 				CC455A3022F190C20056198C /* Purchase+AdMob.swift in Sources */,
 				96DC29F819A82140007406AD /* ViewController.swift in Sources */,
 				CC455A3522F190C20056198C /* Purchase+Consent.swift in Sources */,
+				CCFBC642252EA2E400EE6215 /* VC+Alert.swift in Sources */,
 				CC455A3122F190C20056198C /* Purchase+AdMobBanner.swift in Sources */,
+				CCFBC648252EA5C000EE6215 /* VC+ImagePicker.swift in Sources */,
 				CC455A3422F190C20056198C /* Purchase+AdMobReward.swift in Sources */,
 				CCD08EA823165F10007116AA /* Purchase+AdMobInterstitial.swift in Sources */,
-				CC455A3622F190C20056198C /* Purchase+SwiftyStoreKit.swift in Sources */,
-				CC455A4522F1991D0056198C /* OptionalError.swift in Sources */,
-				CC455A3722F190C20056198C /* Purchase+Store.swift in Sources */,
+				CC455A4522F1991D0056198C /* ErrorHandler.swift in Sources */,
+				CC455A3722F190C20056198C /* Purchase+Product.swift in Sources */,
 				CC455A3922F190C20056198C /* PurchaseService.swift in Sources */,
 				96DC29F319A82140007406AD /* AppDelegate.swift in Sources */,
 				96DC29F619A82140007406AD /* WallpaperResizer.xcdatamodeld in Sources */,
+				CCFBC63A252EA17C00EE6215 /* VC+Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

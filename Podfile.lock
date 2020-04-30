@@ -2,7 +2,7 @@ PODS:
   - Google-Mobile-Ads-SDK (7.66.0):
     - GoogleAppMeasurement (~> 6.0)
     - GoogleUserMessagingPlatform (~> 1.1)
-  - GoogleAppMeasurement (6.8.3):
+  - GoogleAppMeasurement (6.9.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.7)
     - GoogleUtilities/MethodSwizzler (~> 6.7)
     - GoogleUtilities/Network (~> 6.7)
@@ -29,6 +29,7 @@ PODS:
   - "GoogleUtilities/NSData+zlib (6.7.2)"
   - GoogleUtilities/Reachability (6.7.2):
     - GoogleUtilities/Logger
+  - KeychainAccess (4.2.1)
   - MGFinderView (2.1)
   - nanopb (1.30906.0):
     - nanopb/decode (= 1.30906.0)
@@ -37,14 +38,15 @@ PODS:
   - nanopb/encode (1.30906.0)
   - NendSDK_iOS (7.0.0)
   - PersonalizedAdConsent (1.0.5)
-  - PromisesObjC (1.2.10)
+  - PromisesObjC (1.2.11)
   - PureLayout (3.1.6)
-  - SwiftExtensionChimera (0.0.6):
+  - SwiftExtensionChimera (0.0.7):
     - PureLayout
   - SwiftyStoreKit (0.16.1)
 
 DEPENDENCIES:
   - GoogleMobileAdsMediationNend
+  - KeychainAccess
   - MGFinderView
   - PersonalizedAdConsent
   - PureLayout
@@ -58,6 +60,7 @@ SPEC REPOS:
     - GoogleMobileAdsMediationNend
     - GoogleUserMessagingPlatform
     - GoogleUtilities
+    - KeychainAccess
     - MGFinderView
     - nanopb
     - NendSDK_iOS
@@ -69,19 +72,20 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 7d7074359c040f5add4e0963bf860e14690060d0
-  GoogleAppMeasurement: 966e88df9d19c15715137bb2ddaf52373f111436
+  GoogleAppMeasurement: a6a3a066369828db64eda428cb2856dc1cdc7c4e
   GoogleMobileAdsMediationNend: 220a414505c8b7ed96093e53680cc684710c48ca
   GoogleUserMessagingPlatform: c85530d930ba509583aa5a6d50a10aca22cf8502
   GoogleUtilities: 7f2f5a07f888cdb145101d6042bc4422f57e70b3
+  KeychainAccess: 9b07f665298d13c3a85881bd3171f6f49b8151c1
   MGFinderView: e5fad71f21a8a4faabeee6d804b2d9abb41575b1
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   NendSDK_iOS: 5f4d2574d19aece3ebf8ef1833ece0c4af48da23
   PersonalizedAdConsent: dbecabb3467df967c16d9cebc2ef4a8890e4bbd8
-  PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
+  PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
   PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
-  SwiftExtensionChimera: a1328de9cfd065c79e11f4343d1e8ff9ab04e8a4
+  SwiftExtensionChimera: 5328981e2c037c6301d1587e9797acde90243133
   SwiftyStoreKit: 6b9c08810269f030586dac1fae8e75871a82e84a
 
-PODFILE CHECKSUM: 9a19ed9f88fc51a75947c4e10a2bf22a12c05269
+PODFILE CHECKSUM: 7b93f68fd4cd1fe9b3898551c1e088250ad9a113
 
 COCOAPODS: 1.9.3
