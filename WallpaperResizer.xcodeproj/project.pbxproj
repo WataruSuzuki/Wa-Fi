@@ -48,6 +48,7 @@
 		CC455A4522F1991D0056198C /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4422F1991D0056198C /* ErrorHandler.swift */; };
 		CCC904F0252F0532004767AF /* ServiceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC904EF252F0532004767AF /* ServiceKeys.swift */; };
 		CCC9050E25302AA6004767AF /* VC+Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9050D25302AA6004767AF /* VC+Ad.swift */; };
+		CCC9055625305B40004767AF /* WallpaperResizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9055525305B40004767AF /* WallpaperResizerUITests.swift */; };
 		CCD08EA823165F10007116AA /* Purchase+AdMobInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */; };
 		CCFBC63A252EA17C00EE6215 /* VC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBC639252EA17C00EE6215 /* VC+Action.swift */; };
 		CCFBC642252EA2E400EE6215 /* VC+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBC641252EA2E400EE6215 /* VC+Alert.swift */; };
@@ -57,6 +58,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		96DC2A0319A82140007406AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96DC29E519A8213F007406AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96DC29EC19A8213F007406AD;
+			remoteInfo = WallpaperResizer;
+		};
+		CCC9055825305B40004767AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 96DC29E519A8213F007406AD /* Project object */;
 			proxyType = 1;
@@ -121,6 +129,9 @@
 		CC455A4422F1991D0056198C /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		CCC904EF252F0532004767AF /* ServiceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceKeys.swift; sourceTree = "<group>"; };
 		CCC9050D25302AA6004767AF /* VC+Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Ad.swift"; sourceTree = "<group>"; };
+		CCC9055325305B40004767AF /* WallpaperResizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpaperResizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC9055525305B40004767AF /* WallpaperResizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperResizerUITests.swift; sourceTree = "<group>"; };
+		CCC9055725305B40004767AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobInterstitial.swift"; sourceTree = "<group>"; };
 		CCFBC639252EA17C00EE6215 /* VC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Action.swift"; sourceTree = "<group>"; };
 		CCFBC641252EA2E400EE6215 /* VC+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Alert.swift"; sourceTree = "<group>"; };
@@ -143,6 +154,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA510C35B94B3866B2DD9D7 /* Pods_WallpaperResizerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC9055025305B40004767AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +219,7 @@
 			children = (
 				96DC29EF19A8213F007406AD /* WallpaperResizer */,
 				96DC2A0519A82140007406AD /* WallpaperResizerTests */,
+				CCC9055425305B40004767AF /* WallpaperResizerUITests */,
 				96DC29EE19A8213F007406AD /* Products */,
 				0C7FA1C394934712D81E7E2C /* Frameworks */,
 				C911AFF68A571B815E002E5B /* Pods */,
@@ -212,6 +231,7 @@
 			children = (
 				96DC29ED19A8213F007406AD /* WallpaperResizer.app */,
 				96DC2A0219A82140007406AD /* WallpaperResizerTests.xctest */,
+				CCC9055325305B40004767AF /* WallpaperResizerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,6 +334,15 @@
 			path = InAppPurchase;
 			sourceTree = "<group>";
 		};
+		CCC9055425305B40004767AF /* WallpaperResizerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCC9055525305B40004767AF /* WallpaperResizerUITests.swift */,
+				CCC9055725305B40004767AF /* Info.plist */,
+			);
+			path = WallpaperResizerUITests;
+			sourceTree = "<group>";
+		};
 		CCFBC635252EA0E000EE6215 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +406,24 @@
 			productReference = 96DC2A0219A82140007406AD /* WallpaperResizerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CCC9055225305B40004767AF /* WallpaperResizerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC9055C25305B40004767AF /* Build configuration list for PBXNativeTarget "WallpaperResizerUITests" */;
+			buildPhases = (
+				CCC9054F25305B40004767AF /* Sources */,
+				CCC9055025305B40004767AF /* Frameworks */,
+				CCC9055125305B40004767AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCC9055925305B40004767AF /* PBXTargetDependency */,
+			);
+			name = WallpaperResizerUITests;
+			productName = WallpaperResizerUITests;
+			productReference = CCC9055325305B40004767AF /* WallpaperResizerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -384,7 +431,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "鈴木 航";
 				TargetAttributes = {
@@ -402,6 +449,12 @@
 					96DC2A0119A82140007406AD = {
 						CreatedOnToolsVersion = 6.0;
 						LastSwiftMigration = 1140;
+						TestTargetID = 96DC29EC19A8213F007406AD;
+					};
+					CCC9055225305B40004767AF = {
+						CreatedOnToolsVersion = 12.0.1;
+						DevelopmentTeam = F35G39V2UB;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 96DC29EC19A8213F007406AD;
 					};
 				};
@@ -423,6 +476,7 @@
 			targets = (
 				96DC29EC19A8213F007406AD /* WallpaperResizer */,
 				96DC2A0119A82140007406AD /* WallpaperResizerTests */,
+				CCC9055225305B40004767AF /* WallpaperResizerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -462,6 +516,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		96DC2A0019A82140007406AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC9055125305B40004767AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -606,6 +667,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CCC9054F25305B40004767AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC9055625305B40004767AF /* WallpaperResizerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -613,6 +682,11 @@
 			isa = PBXTargetDependency;
 			target = 96DC29EC19A8213F007406AD /* WallpaperResizer */;
 			targetProxy = 96DC2A0319A82140007406AD /* PBXContainerItemProxy */;
+		};
+		CCC9055925305B40004767AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96DC29EC19A8213F007406AD /* WallpaperResizer */;
+			targetProxy = CCC9055825305B40004767AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -860,6 +934,61 @@
 			};
 			name = Release;
 		};
+		CCC9055A25305B40004767AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F35G39V2UB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = WallpaperResizerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.WallpaperResizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallpaperResizer;
+			};
+			name = Debug;
+		};
+		CCC9055B25305B40004767AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = F35G39V2UB;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = WallpaperResizerUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.JchanKchan.WallpaperResizerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallpaperResizer;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -886,6 +1015,15 @@
 			buildConfigurations = (
 				96DC2A1019A82140007406AD /* Debug */,
 				96DC2A1119A82140007406AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC9055C25305B40004767AF /* Build configuration list for PBXNativeTarget "WallpaperResizerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC9055A25305B40004767AF /* Debug */,
+				CCC9055B25305B40004767AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
