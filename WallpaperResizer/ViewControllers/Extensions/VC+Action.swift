@@ -11,7 +11,19 @@ import Foundation
 extension ViewController {
 
     @IBAction func tapUnlockAd() {
-        //TODO -> purchaseManager.addPaymentTransaction()
+        PurchaseService.shared.purchase(productID: ServiceKeys.UNLOCK_AD, completion: { result in
+            DispatchQueue.main.async {
+                self.updateAdDisplaying(result: result)
+            }
+        })
+    }
+
+    @IBAction func tapRestorePurchase() {        
+        PurchaseService.shared.restore(productIDs: [ServiceKeys.UNLOCK_AD]) { (result) in
+            DispatchQueue.main.async {
+                self.updateAdDisplaying(result: result)
+            }
+        }
     }
 
     @IBAction func tapSaveButton(_ sender:AnyObject){
@@ -39,7 +51,7 @@ extension ViewController {
             picker.allowsEditing = true
             picker.delegate = self
             
-            if UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad
+            if UIDevice.current.userInterfaceIdiom == .pad
                 && 8.0 <= (UIDevice.current.systemVersion as NSString).floatValue
             {
                 let popOver = UIPopoverController(contentViewController: picker)
@@ -79,4 +91,23 @@ extension ViewController {
         return UIImage(cgImage: currentImage.cgImage!, scale: currentImage.scale, orientation: orientation)
     }
     
+    private func updateAdDisplaying(result: Bool) {
+        #if targetEnvironment(simulator)
+        if let banner = bannerView {
+            banner.removeFromSuperview()
+            banner.isHidden = true
+            bannerView = nil
+        }
+        #else
+        purchaseButton.isHidden = result
+        restoreButton.isHidden = result
+        if result {
+            if let banner = bannerView {
+                banner.removeFromSuperview()
+                banner.isHidden = true
+                bannerView = nil
+            }
+        }
+        #endif
+    }
 }

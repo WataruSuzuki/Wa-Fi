@@ -19,7 +19,9 @@ launch_photoapp = "Photo";
 launch_wallpapersetting = "Wallpaper setting";
 not_launch_app = "Not this time";
 
-unlock_ad = "Unlock Ad or Restore purchase";
+unlock_ad = "Unlock Ad";
+restore = "Restore purchase";
+confirm = "Confirm";
 
 /* ここから一時的な定義 */
 error = "Error";
@@ -29,3 +31,4 @@ not_available = "Not available";
 restrict_in_app_purchase = "Restrict this item";
 comp_restore = "Restore item";
 cannot_find_pay_history = "Cannot find pay history";
+buy_item = "Buy";

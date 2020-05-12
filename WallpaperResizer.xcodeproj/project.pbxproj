@@ -46,6 +46,8 @@
 		CC455A3722F190C20056198C /* Purchase+Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2C22F190C20056198C /* Purchase+Product.swift */; };
 		CC455A3922F190C20056198C /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A2E22F190C20056198C /* PurchaseService.swift */; };
 		CC455A4522F1991D0056198C /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC455A4422F1991D0056198C /* ErrorHandler.swift */; };
+		CCC904F0252F0532004767AF /* ServiceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC904EF252F0532004767AF /* ServiceKeys.swift */; };
+		CCC9050E25302AA6004767AF /* VC+Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9050D25302AA6004767AF /* VC+Ad.swift */; };
 		CCD08EA823165F10007116AA /* Purchase+AdMobInterstitial.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */; };
 		CCFBC63A252EA17C00EE6215 /* VC+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBC639252EA17C00EE6215 /* VC+Action.swift */; };
 		CCFBC642252EA2E400EE6215 /* VC+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFBC641252EA2E400EE6215 /* VC+Alert.swift */; };
@@ -117,6 +119,8 @@
 		CC455A2C22F190C20056198C /* Purchase+Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Purchase+Product.swift"; sourceTree = "<group>"; };
 		CC455A2E22F190C20056198C /* PurchaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
 		CC455A4422F1991D0056198C /* ErrorHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		CCC904EF252F0532004767AF /* ServiceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceKeys.swift; sourceTree = "<group>"; };
+		CCC9050D25302AA6004767AF /* VC+Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Ad.swift"; sourceTree = "<group>"; };
 		CCD08EA723165F10007116AA /* Purchase+AdMobInterstitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Purchase+AdMobInterstitial.swift"; sourceTree = "<group>"; };
 		CCFBC639252EA17C00EE6215 /* VC+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Action.swift"; sourceTree = "<group>"; };
 		CCFBC641252EA2E400EE6215 /* VC+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+Alert.swift"; sourceTree = "<group>"; };
@@ -155,13 +159,6 @@
 				B98212205B5529AFB2E67903 /* Pods_WallpaperResizerTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		60EEA5771E25F7B70028A74E /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		96A9174919B3328100C4E90F /* Resouces */ = {
@@ -233,7 +230,7 @@
 				96DC29F019A8213F007406AD /* Supporting Files */,
 				960015E119C095E000FB8091 /* WallpaperResizer-Bridging-Header.h */,
 				96CAEC1B19D053300084D970 /* LaunchScreen.xib */,
-				60EEA5771E25F7B70028A74E /* Utilities */,
+				CCC904EF252F0532004767AF /* ServiceKeys.swift */,
 			);
 			path = WallpaperResizer;
 			sourceTree = "<group>";
@@ -332,6 +329,7 @@
 				CCFBC639252EA17C00EE6215 /* VC+Action.swift */,
 				CCFBC641252EA2E400EE6215 /* VC+Alert.swift */,
 				CCFBC647252EA5C000EE6215 /* VC+ImagePicker.swift */,
+				CCC9050D25302AA6004767AF /* VC+Ad.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -594,7 +592,9 @@
 				CC455A3922F190C20056198C /* PurchaseService.swift in Sources */,
 				96DC29F319A82140007406AD /* AppDelegate.swift in Sources */,
 				96DC29F619A82140007406AD /* WallpaperResizer.xcdatamodeld in Sources */,
+				CCC904F0252F0532004767AF /* ServiceKeys.swift in Sources */,
 				CCFBC63A252EA17C00EE6215 /* VC+Action.swift in Sources */,
+				CCC9050E25302AA6004767AF /* VC+Ad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

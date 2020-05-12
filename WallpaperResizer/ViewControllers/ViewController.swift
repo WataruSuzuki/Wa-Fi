@@ -14,21 +14,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonRotateTo90: UIBarButtonItem!
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var purchaseButton: UIButton!
-    
+    @IBOutlet weak var restoreButton: UIButton!
+
     var originalRect: CGRect!
         
     let progressView = MGFinderView(squareSide: 150, color: UIColor.orange)
-    var bannerView: UIView!
+    var bannerView: UIView?
     
-    
-    // TODO: KeyInAppPurchase.UNLOCK_AD
     private func setupAdMob() {
-        PurchaseService.shared.confirmPersonalizedConsent(publisherIds: ["your_pub_id"], productId: "your_product_id", privacyPolicyUrl: AppDelegate.privacyPolicyUrl, completion: { (confirmed) in
-            if confirmed {
-                PurchaseService.shared.loadReward(unitId: "your_reward_unit_id")
-                self.bannerView = PurchaseService.shared.bannerView(unitId: "your_banner_unit_id", rootViewController: self)
+        PurchaseService.shared.confirmPersonalizedConsent(
+            publisherIds: [ServiceKeys.ADMOB_PUB_ID],
+            productId: ServiceKeys.UNLOCK_AD,
+            privacyPolicyUrl: AppDelegate.privacyPolicyUrl, completion: { (confirmed) in
+                if confirmed && !self.purchaseButton.isHidden {
+                    PurchaseService.shared.loadInterstitial(unitId: ServiceKeys.INTERSTITIAL)
+                    let bannerId = UIDevice.current.userInterfaceIdiom == .pad
+                        ? ServiceKeys.BANNER_PAD
+                        : ServiceKeys.BANNER_PHONE
+                    
+                    if self.bannerView == nil {
+                        let banner = PurchaseService.shared.bannerView(unitId: bannerId, rootViewController: self)
+                        self.view.addSubview(banner)
+                        banner.autoPinEdge(.bottom, to: .top, of: self.toolBar)
+                        banner.autoAlignAxis(toSuperviewAxis: .vertical)
+                        self.bannerView = banner
+                    }
+                }
             }
-        })
+        )
     }
     
     override func viewDidLoad() {
@@ -37,29 +50,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         imageView.layer.borderColor = UIColor.orange.cgColor
-        //imageView.layer.borderColor = UIColor(red: 0, green: 0.392, blue: 0, alpha: 1.0).CGColor
         imageView.layer.borderWidth = 3.0
         
         labelMsgChoosePhoto.text = NSLocalizedString("choose_photo", comment: "")
         buttonRotateTo90.title = NSLocalizedString("rotate_90", comment: "")
-        purchaseButton.setTitle(NSLocalizedString("unlock_ad", comment: ""), for: .normal)
+        purchaseButton.setTitle("unlock_ad".localized, for: .normal)
+        restoreButton.setTitle("restore".localized, for: .normal)
     }
-    
-    //TODO: KeyIdAdMob.BANNER_PAD
-    //TODO: KeyIdAdMob.BANNER_PHONE
-    //TODO: KeyIdAdMob.INTERSTITIAL
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        if DJKKeychainManager().isPurchased(Bundle.main.bundleIdentifier!, withValueKey: ) {
-//            purchaseButton.isHidden = true
-//        } else {
-            purchaseButton.isHidden = false
-//            if currentPersonalizedAdConsentStatus != .unknown {
-//                setupAdMob()
-//            }
-//        }
+        let isPurchased = PurchaseService.shared.isPurchased(productID: ServiceKeys.UNLOCK_AD)
+        if !isPurchased {
+            setupAdMob()
+        }
+        purchaseButton.isHidden = isPurchased
+        restoreButton.isHidden = isPurchased
     }
     
     override func didReceiveMemoryWarning() {
@@ -71,9 +78,9 @@ class ViewController: UIViewController {
     
     @objc func handleDelaySavePhoto() {
         DispatchQueue.main.async {
+            self.showInterstitalAd()
             self.saveWallpaperImage()
             self.showAlertLaunchPhotoApp()
-            self.showInterstitalAd()
         }
     }
     
@@ -103,30 +110,4 @@ class ViewController: UIViewController {
         
         progressView?.removeFromSuperview()
     }
-    
-    func showInterstitalAd() {
-        PurchaseService.shared.showReward(rootViewController: self)
-    }
-    
-    func removeAdMob() {
-        //TODO: admobBannerView.removeFromSuperview()
-    }
-    
-}
-
-
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
-	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
-	return input.rawValue
 }
