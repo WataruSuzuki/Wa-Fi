@@ -1,0 +1,58 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+    desc "Tests all UI Tests on Latest Simulator"
+    lane :tests_latest do
+    run_tests(
+        workspace: "WallpaperResizer.xcworkspace",
+        scheme: "WallpaperResizer",
+        devices: [
+            "iPhone 11 Pro Max",
+            "iPad Pro (12.9-inch) (4th generation)"
+        ],
+        disable_concurrent_testing: true,
+        configuration: 'Debug'
+    )
+    end
+    desc "Tests all UI Tests on iOS 10 Simulator"
+    lane :tests_ios10 do
+    run_tests(
+        workspace: "WallpaperResizer.xcworkspace",
+        scheme: "WallpaperResizer",
+        devices: [
+            "iPhone 6 (10.3.1)",
+            "iPad Air (10.3.1)"
+        ],
+        disable_concurrent_testing: true,
+        configuration: 'Debug'
+    )
+    end
+    desc "Tests all UI Tests on iOS 12 Simulator"
+    lane :tests_ios12 do
+    run_tests(
+        workspace: "WallpaperResizer.xcworkspace",
+        scheme: "WallpaperResizer",
+        devices: [
+            "iPhone SE (12.4)",
+            "iPad (5th generation) (12.4)"
+        ],
+        disable_concurrent_testing: true,
+        configuration: 'Debug'
+    )
+    end
+end
