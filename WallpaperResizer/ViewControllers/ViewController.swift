@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     var bannerView: UIView?
     
     private func setupAdMob() {
-        PurchaseService.shared.confirmPersonalizedConsent(
+        PurchaseService.shared.confirmConsent(
             publisherIds: [ServiceKeys.ADMOB_PUB_ID],
             productId: ServiceKeys.UNLOCK_AD,
             privacyPolicyUrl: AppDelegate.privacyPolicyUrl, completion: { (confirmed) in

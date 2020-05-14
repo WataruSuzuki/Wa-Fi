@@ -8,3 +8,4 @@
 CFBundleDisplayName = "Wa-Fi";
 
 NSPhotoLibraryAddUsageDescription = "新しい壁紙を作成するために使用します";
+NSUserTrackingUsageDescription = "最適化された広告を配信するために使用します。";
