@@ -45,8 +45,6 @@ class ViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        setupAdMob()
-        
         super.viewDidLoad()
         
         imageView.layer.borderColor = UIColor.orange.cgColor
@@ -84,7 +82,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func saveWallpaperImage(){
+    private func saveWallpaperImage() {
         var backgroundIMG:UIImage = UIImage(named:"background.png")!;
         let foregroundIMG:UIImage = imageView.image!;
         let widthBG = foregroundIMG.size.width*2

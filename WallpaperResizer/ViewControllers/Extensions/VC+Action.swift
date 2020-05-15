@@ -26,7 +26,7 @@ extension ViewController {
         }
     }
 
-    @IBAction func tapSaveButton(_ sender:AnyObject){
+    @IBAction func tapSaveButton(_ sender:AnyObject) {
         if imageView.image == nil {
             showAlertError(NSLocalizedString("no_photo", comment: ""))
         } else {
@@ -44,25 +44,18 @@ extension ViewController {
         }
     }
     
-    @IBAction func tapOrganaizeButton(_ sender:AnyObject){
-        if UIImagePickerController .isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary) {
-            let picker = UIImagePickerController()
-            picker.sourceType = UIImagePickerController.SourceType.photoLibrary
-            picker.allowsEditing = true
-            picker.delegate = self
-            
-            if UIDevice.current.userInterfaceIdiom == .pad
-                && 8.0 <= (UIDevice.current.systemVersion as NSString).floatValue
-            {
-                let popOver = UIPopoverController(contentViewController: picker)
-                popOver.present(from: sender as! UIBarButtonItem, permittedArrowDirections: UIPopoverArrowDirection.any, animated: true)
-            } else {
-                self.present(picker, animated: true, completion: nil)
-            }
-        } else {
-            
-            //do nothing
+    @IBAction func tapOrganaizeButton(_ sender: AnyObject) {
+        guard UIImagePickerController.isSourceTypeAvailable(.photoLibrary) else { return }
+        
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.allowsEditing = true
+        picker.delegate = self
+        
+        if UIDevice.current.userInterfaceIdiom == .pad, let popOver = picker.popoverPresentationController {
+            popOver.barButtonItem = sender as? UIBarButtonItem
         }
+        self.present(picker, animated: true, completion: nil)
     }
     
     @IBAction func tapTrushButton(_ sender:AnyObject){
