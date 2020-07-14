@@ -225,7 +225,7 @@ class ViewController: UIViewController,
         let profileSettingScheme = ":root=Wallpaper"
         
         if #available(iOS 10.0, *) {
-            UIApplication.shared.openconvertToUIApplicationOpenExternalURLOptionsKeyDictionary(()URL(string: prefixStr + profileSettingScheme)!, completionHandler: nil)
+            UIApplication.shared.open(URL(string: prefixStr + profileSettingScheme)!, options: [:], completionHandler: nil)
         } else {
             UIApplication.shared.openURL(URL(string: prefixStr + profileSettingScheme)!)
         }
